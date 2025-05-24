@@ -17,10 +17,10 @@
 		"verified": "13.344",
 		"maximum": "13"
 	},
-	"url": "https://github.com/vigoren/foundryvtt-simple-calendar",
-	"bugs": "https://github.com/vigoren/foundryvtt-simple-calendar/issues",
-	"readme": "https://github.com/vigoren/foundryvtt-simple-calendar/blob/main/README.md",
-	"license": "https://github.com/vigoren/foundryvtt-simple-calendar/blob/main/LICENSE",
+	"url": "https://github.com/SEDIDEL/foundryvtt-simple-calendar",
+	"bugs": "https://github.com/SEDIDEL/foundryvtt-simple-calendar/issues",
+	"readme": "https://github.com/SEDIDEL/foundryvtt-simple-calendar/blob/main/README.md",
+	"license": "https://github.com/SEDIDEL/foundryvtt-simple-calendar/blob/main/LICENSE",
 	"manifest": "https://raw.githubusercontent.com/SEDIDEL/foundryvtt-simple-calendar/v13-migration/src/module.json",
 	"download": "https://github.com/SEDIDEL/foundryvtt-simple-calendar/archive/refs/heads/v13-migration.zip",
 	"esmodules": [
@@ -111,23 +111,23 @@
 		},
 		{
 			"type": "cover",
-			"url": "https://raw.githubusercontent.com/vigoren/foundryvtt-simple-calendar/main/src/assets/setup-cover.png"
+			"url": "https://raw.githubusercontent.com/SEDIDEL/foundryvtt-simple-calendar/main/src/assets/setup-cover.png"
 		},
 		{
 			"type": "screenshot",
-			"url": "https://raw.githubusercontent.com/vigoren/foundryvtt-simple-calendar/main/simple-calendar-docs/docs/images/sc-v2-themes.gif"
+			"url": "https://raw.githubusercontent.com/SEDIDEL/foundryvtt-simple-calendar/main/simple-calendar-docs/docs/images/sc-v2-themes.gif"
 		},
 		{
 			"type": "screenshot",
-			"url": "https://raw.githubusercontent.com/vigoren/foundryvtt-simple-calendar/main/simple-calendar-docs/docs/images/sc-v2-themes-comp.gif"
+			"url": "https://raw.githubusercontent.com/SEDIDEL/foundryvtt-simple-calendar/main/simple-calendar-docs/docs/images/sc-v2-themes-comp.gif"
 		},
 		{
 			"type": "screenshot",
-			"url": "https://raw.githubusercontent.com/vigoren/foundryvtt-simple-calendar/main/simple-calendar-docs/docs/images/sc-v2-theme-dark-config.png"
+			"url": "https://raw.githubusercontent.com/SEDIDEL/foundryvtt-simple-calendar/main/simple-calendar-docs/docs/images/sc-v2-theme-dark-config.png"
 		},
 		{
 			"type": "screenshot",
-			"url": "https://raw.githubusercontent.com/vigoren/foundryvtt-simple-calendar/main/simple-calendar-docs/docs/images/sc-v2-theme-dark-note.png"
+			"url": "https://raw.githubusercontent.com/SEDIDEL/foundryvtt-simple-calendar/main/simple-calendar-docs/docs/images/sc-v2-theme-dark-note.png"
 		}
 	],
 	"flags": {
