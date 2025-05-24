@@ -18,6 +18,19 @@
 
 Simple Calendar is the ultimate timekeeping module for [FoundryVTT](https://foundryvtt.com/) that works with all game systems!
 
+## Credits
+
+This is a fork of Simple Calendar for Foundry VTT v13 compatibility.
+
+**Original Author:** Dean Vigoren (Vigorator)  
+**Original Repository:** https://github.com/vigoren/foundryvtt-simple-calendar  
+**Original Author Links:**
+- [Website](https://vig.vg)
+- [Patreon](https://patreon.com/vigorator)
+- [Ko-fi](https://ko-fi.com/vigorator)
+
+All credit for the original module design and functionality goes to Dean Vigoren.
+
 It comes prepackaged with many [preset calendars](https://simplecalendar.info/docs/calendar-configuration/quick-setup#choose-a-predefined-calendar) to get your world up and running quickly. Or if you have a completely custom-built calendering system for your world, Simple Calendar can handle that as well!
 
 Get started and create the perfect calendar to enrich your world for your players!
