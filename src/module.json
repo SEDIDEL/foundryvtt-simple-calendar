@@ -1,9 +1,8 @@
 {
 	"id": "foundryvtt-simple-calendar",
-	"name": "foundryvtt-simple-calendar",
 	"title": "Simple Calendar",
 	"description": "A simple calendar module for keeping track of game days and events.",
-	"version": "2.4.18",
+	"version": "2.5.0",
 	"authors": [
 		{
 			"name": "Dean Vigoren (Vigorator)",
@@ -13,18 +12,17 @@
 			"ko-fi": "vigorator"
 		}
 	],
-	"minimumCoreVersion": "10",
-	"compatibleCoreVersion": "12",
 	"compatibility": {
 		"minimum": "10",
-		"verified": "12"
+		"verified": "13.344",
+		"maximum": "13"
 	},
-	"url": "https://github.com/vigoren/foundryvtt-simple-calendar",
-	"bugs": "https://github.com/vigoren/foundryvtt-simple-calendar/issues",
-	"readme": "https://github.com/vigoren/foundryvtt-simple-calendar/blob/main/README.md",
-	"license": "https://github.com/vigoren/foundryvtt-simple-calendar/blob/main/LICENSE",
-	"manifest": "#{MANIFEST}#",
-	"download": "#{DOWNLOAD}#",
+	"url": "https://github.com/SEDIDEL/foundryvtt-simple-calendar",
+	"bugs": "https://github.com/SEDIDEL/foundryvtt-simple-calendar/issues",
+	"readme": "https://github.com/SEDIDEL/foundryvtt-simple-calendar/blob/main/README.md",
+	"license": "https://github.com/SEDIDEL/foundryvtt-simple-calendar/blob/main/LICENSE",
+	"manifest": "https://raw.githubusercontent.com/SEDIDEL/foundryvtt-simple-calendar/v13-migration/src/module.json",
+	"download": "https://github.com/SEDIDEL/foundryvtt-simple-calendar/archive/refs/heads/v13-migration.zip",
 	"esmodules": [
 		"./index.js"
 	],
@@ -105,7 +103,6 @@
 		}
 	],
 	"socket": true,
-	"manifestPlusVersion": "1.2.0",
 	"media": [
 		{
 			"type": "setup",
@@ -113,23 +110,23 @@
 		},
 		{
 			"type": "cover",
-			"url": "https://raw.githubusercontent.com/vigoren/foundryvtt-simple-calendar/main/src/assets/setup-cover.png"
+			"url": "https://raw.githubusercontent.com/SEDIDEL/foundryvtt-simple-calendar/main/src/assets/setup-cover.png"
 		},
 		{
 			"type": "screenshot",
-			"url": "https://raw.githubusercontent.com/vigoren/foundryvtt-simple-calendar/main/simple-calendar-docs/docs/images/sc-v2-themes.gif"
+			"url": "https://raw.githubusercontent.com/SEDIDEL/foundryvtt-simple-calendar/main/simple-calendar-docs/docs/images/sc-v2-themes.gif"
 		},
 		{
 			"type": "screenshot",
-			"url": "https://raw.githubusercontent.com/vigoren/foundryvtt-simple-calendar/main/simple-calendar-docs/docs/images/sc-v2-themes-comp.gif"
+			"url": "https://raw.githubusercontent.com/SEDIDEL/foundryvtt-simple-calendar/main/simple-calendar-docs/docs/images/sc-v2-themes-comp.gif"
 		},
 		{
 			"type": "screenshot",
-			"url": "https://raw.githubusercontent.com/vigoren/foundryvtt-simple-calendar/main/simple-calendar-docs/docs/images/sc-v2-theme-dark-config.png"
+			"url": "https://raw.githubusercontent.com/SEDIDEL/foundryvtt-simple-calendar/main/simple-calendar-docs/docs/images/sc-v2-theme-dark-config.png"
 		},
 		{
 			"type": "screenshot",
-			"url": "https://raw.githubusercontent.com/vigoren/foundryvtt-simple-calendar/main/simple-calendar-docs/docs/images/sc-v2-theme-dark-note.png"
+			"url": "https://raw.githubusercontent.com/SEDIDEL/foundryvtt-simple-calendar/main/simple-calendar-docs/docs/images/sc-v2-theme-dark-note.png"
 		}
 	],
 	"flags": {

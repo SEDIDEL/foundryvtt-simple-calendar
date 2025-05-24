@@ -1,7 +1,7 @@
 {
   "name": "foundryvtt-simple-calendar",
   "description": "A simple calendar module for keeping track of game days and events.",
-  "version": "2.4.18",
+  "version": "2.5.0",
   "author": "Dean Vigoren (vigorator)",
   "keywords": [
     "foundryvtt",
@@ -11,7 +11,7 @@
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/vigoren/foundryvtt-simple-calendar"
+    "url": "https://github.com/SEDIDEL/foundryvtt-simple-calendar"
   },
   "license": "MIT",
   "engines": {
