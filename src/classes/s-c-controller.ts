@@ -327,7 +327,9 @@ export default class SCController {
      */
     public getSceneControlButtons(controls: any[]) {
         if (canUser((<Game>game).user, this.globalConfiguration.permissions.viewCalendar)) {
-            const tokenControls = controls.find((c) => {
+            // In v13, controls might not be an array directly
+            const controlsArray = Array.isArray(controls) ? controls : Array.from(controls);
+            const tokenControls = controlsArray.find((c) => {
                 return c.name === "notes";
             });
             if (tokenControls && Object.prototype.hasOwnProperty.call(tokenControls, "tools")) {
@@ -348,8 +350,10 @@ export default class SCController {
     public async renderJournalDirectory(tab: JournalDirectory, jquery: JQuery) {
         await NManager.createJournalDirectory();
         if (!this.globalConfiguration.showNotesFolder && NManager.noteDirectory) {
-            const folder = jquery.find(`.folder[data-folder-id='${NManager.noteDirectory.id}']`);
-            if (folder) {
+            // jQuery might be a native element in v13, ensure we have jQuery
+            const $element = jquery.jquery ? jquery : $(jquery);
+            const folder = $element.find(`.folder[data-folder-id='${NManager.noteDirectory.id}']`);
+            if (folder && folder.length > 0) {
                 folder.remove();
             }
         }
@@ -360,8 +364,10 @@ export default class SCController {
      */
     public renderJournalSheet(sheet: JournalSheet, jquery: JQuery) {
         if (!this.globalConfiguration.showNotesFolder && NManager.noteDirectory) {
-            const option = jquery.find(`option[value='${NManager.noteDirectory.id}']`);
-            if (option) {
+            // jQuery might be a native element in v13, ensure we have jQuery
+            const $element = jquery.jquery ? jquery : $(jquery);
+            const option = $element.find(`option[value='${NManager.noteDirectory.id}']`);
+            if (option && option.length > 0) {
                 option.remove();
             }
         }

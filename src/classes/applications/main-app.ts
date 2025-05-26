@@ -350,7 +350,9 @@ export default class MainApp extends FormApplication {
         };
 
         // Render the template and return the promise
-        const template = await renderTemplate("templates/app-window.html", windowData);
+        // Use the new namespace for renderTemplate or fall back to global
+        const renderTemplateFunc = (<any>window).foundry?.applications?.handlebars?.renderTemplate || (<any>window).renderTemplate;
+        const template = await renderTemplateFunc("templates/app-window.html", windowData);
         let html = $(template);
 
         // Activate header button click listeners after a slight timeout to prevent immediate interaction
@@ -358,8 +360,10 @@ export default class MainApp extends FormApplication {
 
         // Make the outer window draggable
         const header = html.find("header")[0];
-        new Draggable(this, html, header, this.options.resizable);
-        const drag = new Draggable(this, html, header, this.options.resizable);
+        // Use the new namespace for Draggable or fall back to global
+        const DraggableClass = (<any>window).foundry?.applications?.ux?.Draggable?.implementation || (<any>window).Draggable;
+        new DraggableClass(this, html, header, this.options.resizable);
+        const drag = new DraggableClass(this, html, header, this.options.resizable);
         // eslint-disable-next-line @typescript-eslint/ban-ts-comment
         //@ts-ignore
         drag.handlers["dragMove"] = [(<Game>game).release.generation < 11 ? "mousemove" : "pointermove", this.appDragMove.bind(drag), false];
@@ -373,8 +377,10 @@ export default class MainApp extends FormApplication {
         }
 
         // Set the outer frame z-index
-        if (Object.keys(ui.windows).length === 0) _maxZ = 100 - 1;
-        this.position.zIndex = Math.min(++_maxZ, 9999);
+        // Use the new namespace for _maxZ or fall back to global
+        const maxZRef = (<any>window).foundry?.applications?.api?.ApplicationV2 || window;
+        if (Object.keys(ui.windows).length === 0) maxZRef._maxZ = 100 - 1;
+        this.position.zIndex = Math.min(++maxZRef._maxZ, 9999);
         html.css({ zIndex: this.position.zIndex });
         // eslint-disable-next-line @typescript-eslint/ban-ts-comment
         //@ts-ignore
