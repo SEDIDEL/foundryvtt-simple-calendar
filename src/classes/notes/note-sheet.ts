@@ -10,7 +10,10 @@ import { ConcreteJournalEntry } from "@league-of-foundry-developers/foundry-vtt-
 import MultiSelect from "../renderer/multi-select";
 import { foundryMergeObject } from "../foundry-interfacing/utilities";
 
-export class NoteSheet extends JournalSheet {
+// Use the global JournalSheet for backward compatibility, or the new namespace
+const JournalSheetClass = (<any>window).JournalSheet || (<any>window).foundry?.applications?.sheets?.journal?.JournalEntrySheet || (<any>window).foundry?.appv1?.sheets?.JournalSheet;
+
+export class NoteSheet extends JournalSheetClass {
     private dirty: boolean = false;
 
     private resized: boolean = false;
@@ -191,7 +194,7 @@ export class NoteSheet extends JournalSheet {
         }
     }
 
-    override get title(): string {
+    get title(): string {
         return this.object.name || "Note";
     }
 
@@ -554,7 +557,7 @@ export class NoteSheet extends JournalSheet {
         }
     }
 
-    protected override _updateObject(event: Event, formData: JournalSheet.FormData): Promise<unknown> {
+    protected _updateObject(event: Event, formData: JournalSheet.FormData): Promise<unknown> {
         if (this.journalPages[this.uiElementStates.selectedPageIndex].type === "text") {
             this.journalPages[this.uiElementStates.selectedPageIndex].text = { content: formData.content };
             this.dirty = true;

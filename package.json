@@ -1,7 +1,7 @@
 {
   "name": "foundryvtt-simple-calendar",
   "description": "A simple calendar module for keeping track of game days and events.",
-  "version": "2.5.0",
+  "version": "2.5.01",
   "author": "Dean Vigoren (vigorator)",
   "keywords": [
     "foundryvtt",
@@ -31,6 +31,7 @@
     "@types/node": "^20.12.12",
     "@typescript-eslint/eslint-plugin": "^7.9.0",
     "@typescript-eslint/parser": "^7.9.0",
+    "archiver": "^7.0.1",
     "circular-dependency-plugin": "^5.2.2",
     "copy-webpack-plugin": "^12.0.2",
     "css-loader": "^7.1.1",
